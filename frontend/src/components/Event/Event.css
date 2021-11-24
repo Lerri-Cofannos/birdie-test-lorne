@@ -1,0 +1,41 @@
+.event-container {
+  margin: 12px 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-circle {
+  height: 32px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.event-display {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.timestamp {
+  margin: 5px auto;
+  margin-bottom: 0px;
+}
+
+.event-name {
+  margin: 5px auto;
+  margin-top: 0px;
+}
+
+.event-observations {
+  margin: 5px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.observation-element {
+  margin: 5px auto;
+}

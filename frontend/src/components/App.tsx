@@ -1,29 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './App.css';
 import Header from './Header';
+import DataDisplay from './DataDisplay';
 import Footer from './Footer';
 
 function App() {
-  const [data, setData] = useState<String>();
-  useEffect(() => {
-    async function getData() {
-      const response = await axios.get('/data/all');
-      console.log('I have gotten my data', response);
-      const displayData = JSON.stringify(response.data.data)
-      setData(displayData);
-    }
-    getData();
-  }, []);
-
   return (
     <div className='App'>
       <Header />
-      <body>
-        {data && (
-          <div className='body-container'> This is my data: {data} </div>
-        )}
-      </body>
+      <div className='body-container'>
+        <DataDisplay />
+      </div>
       <Footer />
     </div>
   );
