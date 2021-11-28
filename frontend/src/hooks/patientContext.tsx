@@ -10,12 +10,12 @@ interface DefaultType {
 const PatientContext = React.createContext<DefaultType | undefined>(undefined);
 
 export function PatientProvider({ children }: { children: React.ReactNode }) {
-  const errorPatient: IPatient = {
+  const defaultPatient: IPatient = {
     index: -1,
     id: '404',
-    name: 'default name',
+    name: 'waiting for patient',
   };
-  const [patient, setPatient] = useState<IPatient>(errorPatient);
+  const [patient, setPatient] = useState<IPatient>(defaultPatient);
 
   return (
     <PatientContext.Provider

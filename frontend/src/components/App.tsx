@@ -10,7 +10,7 @@ import DataDisplay from './DataDisplay';
 import Footer from './Footer';
 
 function App() {
-  const { setPatient } = usePatient();
+  const { patient, setPatient } = usePatient();
   const [patientList, setPatientList] = useState<IPatient[]>();
 
   useEffect(() => {
@@ -18,8 +18,8 @@ function App() {
   }, [setPatient]);
 
   function patientClick(e: any) {
-    const patient = JSON.parse(e.target.id);
-    setPatient(patient);
+    const patientId = JSON.parse(e.target.id);
+    setPatient(patientId);
   }
   return (
     <div className='App'>
@@ -40,6 +40,8 @@ function App() {
               );
             })}
         </div>
+        {patient.name}
+        <p className='id'>Patient Id: {patient.id}</p>
         <DataDisplay />
       </div>
       <Footer />

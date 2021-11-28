@@ -20,7 +20,6 @@
     "express": "^4.16.4",
     "i": "^0.3.7",
     "knex": "^0.95.14",
-    "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
   },
   "devDependencies": {

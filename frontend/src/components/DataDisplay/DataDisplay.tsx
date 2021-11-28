@@ -36,7 +36,6 @@ export default function DataDisplay() {
 
   return (
     <>
-      Patient Id: {patient.id}
       <div className='scroll border'>{htmlVisitArray || <Loader />}</div>
     </>
   );
