@@ -1,0 +1,20 @@
+.observation {
+  display: flex;
+}
+
+.observation-title {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+  min-width: 202px;
+  font-weight: bold;
+}
+
+.observation-description {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 65%;
+}

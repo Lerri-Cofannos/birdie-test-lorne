@@ -3,8 +3,10 @@
   line-height: 125%;
   --color1: #00254d;
   --color2: #54c5c1;
-  --color3: #fff8d6;
+  --light-yellow: #fff8d6;
+  --dark-yellow: #f7c364;
   color: var(--color1);
+  transition: all 0.1s ease-in-out;
 }
 
 body {
