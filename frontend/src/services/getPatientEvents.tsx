@@ -2,7 +2,10 @@
 import axios from 'axios';
 
 export default async function getPatientEvents(id: string, setData: Function) {
-  const route: string = id ? `/data/${id}` : '/data/all';
+  const route: string =
+    id !== '404'
+      ? `https://birdie-test-lorne-back.herokuapp.com/data/${id}`
+      : 'https://birdie-test-lorne-back.herokuapp.com/data/all';
 
   const response = await axios.get(route).catch(err => {
     console.log('Server error: ', err);

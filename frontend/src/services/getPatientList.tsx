@@ -5,7 +5,8 @@ export default async function getPatientList(
   setPatientList: Function,
   setPatient: Function
 ) {
-  const route: string = '/data/patientList';
+  const route: string =
+    'https://birdie-test-lorne-back.herokuapp.com/data/patientList';
 
   const response = await axios.get(route).catch(err => {
     console.log('Server error: ', err);
