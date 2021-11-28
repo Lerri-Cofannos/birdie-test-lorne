@@ -5,6 +5,8 @@ given to elderly patients. The idea is have a user-frindly display of the data
 as to let the family members access the observations easily. Hence, my main focus
 point has been the reformating of the raw data as to optimize the display of the
 events and facilitate its reading.
+A non-functionning front-end can be seen here : birdie-test-lorne.netlify.app/
+And a video of the functionning app can be found in the root directory.
 This website has been done between Wednesday the 24th and Sunday the 28th of
 November in the context of a recruitement developer test for an internship.
 
@@ -40,6 +42,10 @@ I like to comment my code, but I didn't have much time to add this touch, and
 the code is fairly straightforward.
 The timeline design didn't cooperate, so the line doesn't go through all the
 dots... I must be missing a point here.
+Last but not least, I tried deploying the website using Heroku -- the first
+time for me not using a docker to deploy--, but the frontend didn't load
+properly so I tried on Netlify, but I couldn't resolve the cors policy issue
+on my own.
 
 # Techs
 
