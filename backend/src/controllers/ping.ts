@@ -4,6 +4,6 @@ export const pingController = express.Router();
 
 pingController.get('', (_, res) => {
   res.status(200).json({
-    greetings: 'Thank you for spending some time on this test. All the best 🙌'
+    greetings: 'Basic request to the backend server works ! 🙌'
   });
 });

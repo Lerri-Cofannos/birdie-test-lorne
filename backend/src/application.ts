@@ -1,6 +1,6 @@
 import * as express from "express";
 import {pingController} from "./controllers/ping";
-import {dataController} from "./controllers/data"; 
+import {dataController} from "./controllers/data.router"; 
 
 const app = express();
 
