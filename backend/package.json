@@ -1,23 +1,24 @@
 {
   "name": "backend",
-  "version": "0.0.0",
-  "description": "backend",
+  "version": "0.0.1",
+  "description": "backend server serving the static frontend",
   "license": "MIT",
   "files": [
     "lib"
   ],
   "main": "lib/index",
-  "types": "lib/index",
+  "types": "module",
   "scripts": {
     "clean": "rimraf lib && rimraf coverage",
     "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
     "lint": "tslint --force --format verbose \"src/**/*.ts\"",
     "test": "jest",
     "test:watch": "jest --watch",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "postinstall": "tsc",
+    "start": "node dist/src/index.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.16.4",
     "i": "^0.3.7",
     "knex": "^0.95.14",
@@ -28,7 +29,6 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.2",
     "@types/supertest": "^2.0.11",
-    "coveralls": "^3.1.0",
     "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.2",

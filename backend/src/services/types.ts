@@ -10,4 +10,3 @@ export interface IObservation {
   title: string;
   description: string;
 }
-  

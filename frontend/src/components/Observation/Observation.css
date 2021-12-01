@@ -1,5 +1,7 @@
 .observation {
   display: flex;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .observation-title {

@@ -5,46 +5,46 @@
   text-align: center;
 }
 
+.top-line {
+  height: 10px;
+  background-color: var(--light-turquoise);
+}
 .btn-row {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
 
-button {
-  margin: 10px;
-  border: 4px #000;
-  border-radius: 4px;
-  background-color: #0459b4;
-  box-shadow: 3px 3px 4px 2px rgb(0 0 0 / 25%);
+.tab {
   font-size: 18px;
+  padding: auto;
   font-weight: 500;
+  border: none;
   text-align: center;
-  color: #fff;
-  cursor: pointer;
   height: 100%;
   width: 100%;
+  box-shadow: -1px -1px 0px 1px rgb(0 0 0 / 25%);
+} 
+button {
   position: relative;
-  bottom: 2px;
-  right: 2px;
+  background-color: var(--light-turquoise);
+  box-shadow: inset -1px -1px 1px 1px rgb(0 0 0 / 25%) !important;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 button:hover {
-  background-color: var(--color1);
-  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
-  position: relative;
-  bottom: 0px;
-  right: 0px;
+  background-color: #fff;
 }
 
 .body-container {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
   margin: auto;
   height: calc(100vh - 180px);
   width: 80%;
   max-width: 1200px;
-  min-width: 450px;
+  min-width: 815px;
   background: #fff;
   box-sizing: border-box;
 }

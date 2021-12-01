@@ -5,7 +5,7 @@ export default async function getPatientList(
   setPatientList: Function,
   setPatient: Function
 ) {
-  const route: string = 'http://localhost:8000/data/patientList';
+  const route: string = '/data/patientList';
 
   const response = await axios.get(route).catch(err => {
     console.log('Server error: ', err);

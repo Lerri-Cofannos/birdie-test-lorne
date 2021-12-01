@@ -19,10 +19,7 @@ export default function Observation({ obs }: { obs: IObservation }) {
   }
 
   return (
-    <div
-      className='observation'
-      key={`${obs.title}${Math.random().toString()}`}
-    >
+    <div className='observation'>
       <p className='observation-title'>{obs.title} :</p>
       <p className='observation-description'>
         {formatDescription(obs.description)}

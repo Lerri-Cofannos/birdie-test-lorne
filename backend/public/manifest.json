@@ -1,0 +1,13 @@
+{
+  "short_name": "Birdie Test App",
+  "name": "Test app for recruitement",
+  "icons": [
+    {
+      "src": "favicon.jpeg",
+      "sizes": "400x400",
+      "type": "jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

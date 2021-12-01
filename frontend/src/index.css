@@ -3,6 +3,7 @@
   line-height: 125%;
   --color1: #00254d;
   --color2: #54c5c1;
+  --light-turquoise: #D1F2F2;
   --light-yellow: #fff8d6;
   --dark-yellow: #f7c364;
   color: var(--color1);

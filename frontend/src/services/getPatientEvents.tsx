@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default async function getPatientEvents(id: string, setData: Function) {
   if (id !== '404') {
-    const route: string = `http://localhost:8000/data/${id}`;
+    const route: string = `/data/${id}`;
     await axios
       .get(route)
       .then(response => {
@@ -12,7 +12,7 @@ export default async function getPatientEvents(id: string, setData: Function) {
           console.log(`Successful response from backend at ${route}`);
           if (response.status === 200 && typeof resData === 'object') {
             setData(resData);
-            console.log(`patient changed to ${id} and useEffect called`);
+            console.log(`patient changed`);
           } else {
             console.log(`Error from ${route}: `, resData.err);
             setData(resData.err);
@@ -23,7 +23,7 @@ export default async function getPatientEvents(id: string, setData: Function) {
         console.log('Server error: ', err);
       });
   } else {
-    const route: string = 'http://localhost:8000/hello';
+    const route: string = '/hello';
     await axios
       .get(route)
       .then(response => {
